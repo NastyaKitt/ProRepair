@@ -1,0 +1,480 @@
+html {
+    font-size: 16px;
+    font-family: "Alumni Sans", serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #000;
+}
+h1, h2, h3, p{
+    margin: 0;
+}
+button {
+    font-family: "Alumni Sans", serif;
+    color: #fff;
+    cursor: pointer;
+}
+header {
+    width: calc(100% - 20rem);
+    height: 6rem;
+    background-color: #28A745;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10rem;
+    align-items: center;
+    border-bottom: 2px #000 solid;
+}
+header h1{
+    font-size: 4rem;
+}
+header button{
+    width: 20rem;
+    height: 4rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 1rem;
+    font-size: 2rem;
+    box-shadow: #fff 0 3px 11px 2px;
+    &:hover{
+        background-color: #252525;
+        transform: scale(1.05);
+        transition: transform 1s, background-color 1s ;
+    }
+    &:active{
+        background-color: #131313;
+        transform: scale(0.95);
+        transition: transform 0.1s, background-color 0.1s ;
+    }
+}
+/* _____________________ПЕРВЫЙ ЭКРАН */
+
+.firstWin {
+    width: 100%;
+    height: 50rem;
+    background-image: url(/img/mainman.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.up {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #333;
+    border-bottom: 1px solid #000;
+}
+.up button{
+    width: 33%;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    &:hover {
+        color: #28A745;
+        transform: scale(1.05);
+        transition: color 0.5s, transform 1s, text-shadow 1s;
+        text-shadow: #000 1px 5px 5px;
+    }
+    &:active{
+        color: #208838;
+        transform: scale(0.95);
+        transition: color 0.1s, transform 0s;
+    }
+}
+.down {
+    height: 46rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+}
+.downElement {
+    width: calc(33.3% - 10rem);
+    height: calc(100% - 8rem);
+    background-color: #333;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    justify-content: space-between;
+}
+.dodwnActive {
+    display: flex;
+    border: 1px solid #000;
+    border-top: 0;
+}
+.dodwnActiveP {
+    display: flex;
+    border: 1px solid #000;
+    border-top: 0;
+    position: relative;
+    right: 0;
+}
+
+/* _______________________________О НАС */
+.us {
+    height: auto;
+    width: 100%;
+    background-color: #000;
+    
+}
+.greenLine {
+    width: 100%;
+    height: 6rem;
+    background-color: #28A745;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 6rem;
+}
+.us p {
+    width: calc(100% - 20rem);
+    height: auto;
+    padding: 4rem 10rem;
+    font-size: 3rem;
+}
+/* ____________________________ПОЧЕМУ ВЫБРАТЬ НАС */
+.whyUs {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+.three{
+    width: calc(100% - 20rem);
+    height: auto;
+    padding: 4rem 10rem;
+}
+.three h1{
+    font-size: 4rem;
+}
+.three p{
+    font-size: 2.5rem;
+    width: 50%;
+}
+.threeItem, .threeItemC {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.threeItemC{
+    margin: 2rem 0;
+}
+.line{
+    width: 50%;
+    height: 1px;
+    background-color: #fff;
+    margin: 1rem 0;
+}
+/* ______________________________ПРАЙС */
+.price {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+.price2 {
+    width: calc(100% - 20rem);
+    height: auto;
+    padding: 4rem 10rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price2 button {
+    height: 10rem;
+    width: 30rem;
+    background-color: transparent;
+    border: 1px #28A745 solid;
+    border-radius: 1rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    box-shadow: #fff 0px 0px 17px -1px;
+    &:hover{
+        background-color: #33333344;
+        transform: scale(1.05);
+        transition: background-color 0.5s, transform 1s ;
+    }
+    &:active{
+        background-color: #33333391;
+        transform: scale(0.95);
+        transition: background-color 0s, transform 0.1s ;
+    }
+
+}
+.priceList {
+    margin-top: 2rem;
+    width: 100%;
+}
+.priceList h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.line2 {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+.itemP {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+.itemP b{
+    color: #28A745;
+}
+
+
+
+/* _________________________МАСТЕРА */
+.master {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+.masters {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% - 20rem);
+    padding: 4rem 10rem;
+    justify-content: space-between;
+}
+.master1, .master1C {
+    background-color: #333;
+    border-radius: 1rem;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.master1 h1, .master1C h1{
+    margin-bottom: 0.5rem;
+}
+.master1 p, .master1C p{
+    margin-bottom: 1rem;
+}
+
+.photo {
+    width: 27rem;
+    height: 26rem;
+    margin: 1rem;
+    background-color: #28A745;
+    border-radius: 1rem;
+}
+.photo img{
+    width: 27rem;
+    height: 26rem;
+    background-color: #28A745;
+    border-radius: 1rem;
+}
+/* _______________________________ФОРМА */
+.form {
+    width: 100%;
+    background-color: #000;
+}
+.outline {
+    height: 50rem;
+    width: calc(100% - 20rem);
+    margin: 4rem 10rem;
+    border-radius: 1rem;
+    border: 1px #28A745 solid;
+    display: flex;
+    justify-content: space-between;
+}
+.outline h1 {
+    padding-top: 1rem;
+    font-size: 4rem;
+}
+.left,.right {
+    width: 50%;
+    border: 1px #28A745 solid;
+    margin: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.left iframe{
+    width: 90%;
+    height:80% ;
+    margin-bottom: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+form input{
+    width: 30rem;
+    height: 3rem;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    margin: 2rem 0;
+}
+.ok{
+    width: 50%;
+    padding: 0;
+    background-color: #28A745;
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
+    &:hover{
+        background-color: #208838;
+        transform: scale(1.05);
+        transition: transform 1s, background-color 1s ;
+    }
+    &:active{
+        background-color: #27b348;
+        transform: scale(0.95);
+        transition: transform 0.1s, background-color 0.1s ;
+    }
+}
+/* ___________________________________КОНТАКТЫ */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h1 {
+    font-size: 3rem;
+}
+.triple {
+    width: 100%;
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-around;
+}
+.triple button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+.greenLines {
+    width: calc(100% - 20rem);
+    padding: 0 10rem;
+    background-color: #28A745;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.greenLines p{
+    font-size: 1.5rem;
+}
+/* ______________________ПОПАП */
+.popup {
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000c4;
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.openP {
+    display: flex;
+}
+.popupForm {
+    width: calc(60% - 2rem);
+    height: 80%;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: grid;
+    border: 1px #fff solid;
+}
+.popupForm input{
+    width:60%;
+}
+.popupForm h1{
+    font-size: 3rem;
+}
+.popup button {
+    position: absolute;
+    right: 4rem;
+    top: 2rem;
+    background-color: transparent;
+    border: none;
+}
+.popup button:hover svg path {
+    stroke: #28A745;
+}
+.popup button:hover{
+    transform: rotate(180deg);
+    transition: transform 1s, stroke 0.2s ;
+}
+.popup button:active svg path {
+    stroke: #29e455;
+}
+.popup button:active{
+    transform: scale(0.5);
+    transition: transform 0.1s, stroke 0.2s ;
+}
+
+/* ___________________________________ПОЛИТИКА */
+.politic{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000c4;
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.openPol{
+    display: flex;
+}
+.politica{
+    width: calc(60% - 2rem);
+    height: 80%;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: grid;
+    border: 1px #fff solid;
+    overflow-y: scroll;
+    text-align: start;
+}
+.politica p{
+    font-size: 1.5rem;
+}
+.politic button {
+    position: absolute;
+    right: 4rem;
+    top: 2rem;
+    background-color: transparent;
+    border: none;
+}
+.politic button:hover svg path {
+    stroke: #28A745;
+}
+.politic button:hover{
+    transform: rotate(180deg);
+    transition: transform 1s, stroke 0.2s ;
+}
+.politic button:active svg path {
+    stroke: #29e455;
+}
+.politic button:active{
+    transform: scale(0.5);
+    transition: transform 0.1s, stroke 0.2s ;
+}

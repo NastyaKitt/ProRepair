@@ -1,0 +1,158 @@
+@media (max-width:1650px) {
+    .photo img, .photo {
+        width: 20rem;
+        height:20rem ;
+    }    
+}
+@media (max-width:1400px) {
+    .photo img, .photo {
+        width: 20rem;
+        height:20rem ;
+    }   
+    .form input{
+        width: 20rem;
+    }
+    .masters,.price2,.three,.us p {
+        padding: 4rem 6rem;
+        width: calc(100% - 12rem);
+    }
+    .outline{
+        width: calc(100% - 12rem);
+        margin: 4rem 6rem;
+    }
+}
+@media (max-width:768px) {
+    html{
+        font-size: 14px;
+    }
+    .popupForm{
+        height: 50%;
+    }
+    header{
+        width: calc(100% - 8rem);
+        padding:0 4rem ;
+    }
+    .firstWin{
+        background-position: center;
+    }
+    .photo img, .photo {
+        width: 10rem;
+        height:10rem ;
+    }    
+    .masters,.price2,.three,.us p {
+        padding: 4rem 4rem;
+        width: calc(100% - 8rem);
+    }
+    .outline{
+        height: auto;
+        width: calc(100% - 8rem);
+        margin: 4rem 4rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left, .right{
+        width: 100%;
+        border: none;
+        margin: 0;
+    }
+    .left iframe{
+        height: 30rem;
+    }
+    form{
+        width: 100%;
+    }
+    .form input{
+        width: 30rem;
+    }
+
+}
+@media (max-width:480px) {
+    html{
+        font-size: 10px;
+    }
+    .popupForm{
+        height: 50%;
+    }
+    .politic button{
+        right: 1rem;
+        top: 1rem;
+    }
+    header{
+        width: calc(100% - 8rem);
+        padding:0 4rem ;
+    }
+    .firstWin{
+        background-position: center;
+    }
+    .three p{
+        width: 100%;
+    }
+    .dodwnActive,.dodwnActiveP{
+        display: none;
+    }
+    .itemP{
+        font-size: 1.2rem;
+    }
+    .price2 button {
+        width: 20rem;
+        height: 5rem;
+    }
+    .photo img, .photo {
+        width: 10rem;
+        height:10rem ;
+    }    
+    .masters,.price2,.three,.us p {
+        padding: 4rem 4rem;
+        width: calc(100% - 8rem);
+    }
+    .masters{
+        flex-direction: column;
+        border: 1px #fff solid;
+        align-items: center;
+    }
+    .master1,.master1C{
+        border: 1px #fff solid;
+        margin: 0;
+        width: 60%;
+    }
+    .master1C{
+        margin: 2rem 0;
+    }
+    .outline{
+        height: auto;
+        width: calc(100% - 8rem);
+        margin: 4rem 4rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .outline h1{
+        font-size: 3rem;
+    }
+    .left, .right{
+        width: 100%;
+        border: none;
+        margin: 0;
+    }
+    .left iframe{
+        height: 30rem;
+    }
+    form{
+        width: 100%;
+    }
+    .form input{
+        width: 27rem;
+    }
+    .triple{
+        flex-direction: column;
+        align-items: center;
+    }
+    .greenLines{
+        width: calc(100% - 8rem);
+        padding: 0 4rem;
+    }
+}
+@media (max-width:480px) {
+    html{
+        font-size: 8px;
+    }
+}
