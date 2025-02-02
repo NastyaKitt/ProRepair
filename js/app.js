@@ -7,7 +7,9 @@ let speedActive = document.getElementById('speedWin')
 let priceBtn = document.getElementById('price')
 let priceActive = document.getElementById('priceWin')
 
-
+window.onload = function() {
+    window.scrollTo(0, 0);
+};
 
 speedBtn.addEventListener('click', function() {
     speedActive.classList.toggle('dodwnActive'); 
